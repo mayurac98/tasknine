@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color: navy;text-align: center;">Welcome to Cybersecurity</h1>
+    <img onmouseover="enter();" onmouseleave="leave();" id="image"  src="https://img.etimg.com/thumb/msid-92021361,width-650,height-488,imgsize-38296,resizemode-75/cyber-security-1200.jpg" class="center">
+    <script>
+    var disappear=function(){
+    if(document.getElementById("image").style.visibility=="visible"){
+        document.getElementById("image").style.visibility=="hidden";
+    }else{ocument.getElementById("image").style.visibility=="visible";}
+    }
+    function enter(){
+        document.getElementById("image").style.visibility="hidden";
+        
+    }
+    function leave(){
+        document.getElementById("image").style.visibility="visible";
+    }
+    </script>
+</body>
+</html>
